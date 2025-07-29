@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0;
+  color: #222;
+}
+
+header {
+  background-color: #800000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ffd700;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(to bottom right, #800000, #ffcc70);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.owner-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #ffd700;
+  color: #800000;
+  padding: 10px 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #800000;
+  border: 1px solid #800000;
+}
+
+.menu {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.menu h2 {
+  color: #800000;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 220px;
+  background-color: #fff0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.about, .contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2, .contact h2 {
+  color: #800000;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #800000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 8px;
+    font-size: 15px;
+  }
+
+  .owner-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+}
